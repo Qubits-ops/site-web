@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="icon" type="image/x-icon" href="../static/images/Logo.ico">
+	<meta charset="UTF-8">
+	<meta name="wiewport" content="width-device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+	<title>Neuralink</title>
+</head>
+<body>
+	<nav class="navigation">
+		<a href="#home" class="logo-lien">
+				<img src="../static/images/Logo.png" alt="logo-robot" class="logo-image">
+		</a>
+		<div class="liens">
+			<a href="{{url_for('acceuil')}}" class="nav-lien">Acceuil</a>
+			<a href="{{url_for('puces')}}" class="nav-lien">Puces</a>
+			<a href="{{url_for('new')}}" class="nav-lien">expli</a>
+			<a href="{{url_for('contact')}}" class="nav-lien">Contact</a>
+
+		</div>
+
+	</nav>
+	 <audio controls preload="metadata" loop="loop" autoplay="autoplay">
+			<source src="../static/musique/musicweb2.mp3" type="audio/mpeg">
+			votre navigateur ne peux pas lire l'audio
+
+	</audio>
+	<h1>Bienvenue {{nom}}</h1>
+	<p>Nous sommes le {{date}}</p>
+	<div class="video">
+		<p align="center"><iframe width="1000" height="600" src="https://www.youtube.com/embed/kPGa_FuGPIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+	</div>
+	<main class="main">
+			Site de Neuralink -- Achat de puces Artificiel
+	</main>
+
+</body>
+</html>

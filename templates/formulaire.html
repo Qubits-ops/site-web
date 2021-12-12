@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../static/images/Logo.ico">
+    <meta name="wiewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <title>Login</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <a href="#home" class="logo-lien">
+          <img src="../static/images/Logo.png" alt="logo-robot" class="logo-image">
+      </a>
+
+
+    </nav>
+    <h1 align="center">Avant de rentrer sur le site veuillez vous enregistrez</h1>
+    <br>
+      <form action="/site" method="POST">
+        <p align="center"><label>Votre nom: </label></p>
+        <p align="center"><input type="text" name="nom" value="" minlength="4" maxlength="12" required="required"></p>
+        <br>
+        <p align="center"><label>Votre email: </label></p>
+        <p align="center"><input type="email" name="mail" value="" minlength="12" maxlength="40" required="required"></p>
+        <br>
+        <p align="center"><label>Votre mot de passe: </label></p>
+        <p align="center"><input type="password" name="pass" value="" minlength="8"  maxlength="12" required="required"></p>
+        <br>
+        <p align="center"><input type="submit" value="Envoyer" /></p>
+
+      </form>
+  </body>
+</html>

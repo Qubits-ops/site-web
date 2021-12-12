@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../static/images/Logo.ico">
+  	<meta charset="UTF-8">
+  	<meta name="wiewport" content="width-device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<link rel="stylesheet" href="../static/css/style.css">
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <title>Trouver</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <a href="#home" class="logo-lien">
+          <img src="../static/images/Logo.png" alt="logo-robot" class="logo-image">
+      </a>
+    </nav>
+    <audio controls preload="metadata" loop="loop" autoplay="autoplay">
+ 			<source src="../static/musique/matrix.mp3" type="audio/mpeg">
+ 			votre navigateur ne peux pas lire l'audio
+
+ 	</audio>
+    <ul>
+      {% for personne in pirates %}
+      <li>id={{ personne[0] }},<br> pseudo={{ personne[1] }},<br> pass={{personne[2]}},<br> mail={{personne[3]}}<br><br></li>
+      {% endfor %}
+    </ul>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../static/images/Logo.ico">
+    <meta name="wiewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <title>Puces</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <a href="#home" class="logo-lien">
+          <img src="../static/images/Logo.png" alt="logo-robot" class="logo-image">
+      </a>
+      <div class="liens">
+        <a href="{{url_for('acceuil')}}" class="nav-lien">Acceuil</a>
+        <a href="{{url_for('puces')}}" class="nav-lien">Puces</a>
+        <a href="{{url_for('new')}}" class="nav-lien">News</a>
+        <a href="{{url_for('contact')}}" class="nav-lien">Contact</a>
+
+      </div>
+
+    </nav>
+    <audio controls preload="metadata" loop="loop" autoplay="autoplay">
+ 			<source src="../static/musique/musicweb2.mp3" type="audio/mpeg">
+ 			votre navigateur ne peux pas lire l'audio
+
+ 	</audio>
+      <h1 align="center">Bienvenue sur la page choix des puces:</h1>
+      <br></br>
+      <h2 align="center">Puces numero 1:</h2>
+      <p align="center"><img src="../static/images/puces/intelligence.png" alt="puces intelligences" width="520" height="270" align="top"></img></p>
+      <p align="center"><strong>Effet:</strong> puces pour ameliorer l'intelligence<br><strong>prix:</strong> 100000$</p>
+      <br></br>
+      <h2 align="center">Puces numero 2:</h2>
+      <p align="center"><img src="../static/images/puces/force.png" alt="puces pour ameliorer la forces" width="520" height="270" align="top"></img></p>
+      <p align="center"><strong>Effet:</strong> puces pour ameliorer la forces<br><strong>prix:</strong> 200000$</p>
+
+  </body>
+</html>
